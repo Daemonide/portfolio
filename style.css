@@ -75,20 +75,116 @@ body {
   color: var(--text);
   background: linear-gradient(270deg, var(--bg1), var(--bg2), var(--bg3), var(--bg4));
   background-size: 800% 800%;
-  animation: gradientLoop 18s ease infinite;
+  animation: gradientLoop 18s ease;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Smooth looping gradient animation */
 @keyframes gradientLoop {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
     background-position: 100% 50%;
   }
   100% {
     background-position: 0% 50%;
   }
+}
+.net-btn {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  padding: 40px 20px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  cursor: pointer;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  z-index: 0;
+}
+
+/* Hover lift */
+.net-btn:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+
+/* Holographic shimmer effect */
+.net-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(
+    from 0deg,
+    #ff00de,
+    #00ffe5,
+    #ffd700,
+    #00ff73,
+    #00c3ff,
+    #ff00de
+  );
+  background-size: 400% 400%;
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: holoShift 6s linear infinite;
+  z-index: 1;
+}
+
+/* Show shimmer on hover */
+.net-btn:hover::before {
+  opacity: 0.65;
+}
+
+/* Logo overlay */
+.net-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 2;
+}
+
+/* Show logo on hover */
+.net-btn:hover::after {
+  opacity: 0.35;
+}
+
+/* Different logos per button */
+.net-btn[data-logo="proxmox"]::after {
+  background-image: url("assets/logos/proxmox.png");
+}
+.net-btn[data-logo="crafty"]::after {
+  background-image: url("assets/logos/crafty.png");
+}
+.net-btn[data-logo="homeassistant"]::after {
+  background-image: url("assets/logos/homeassistant.png");
+}
+.net-btn[data-logo="sftpgo"]::after {
+  background-image: url("assets/logos/sftpgo.png");
+}
+.net-btn[data-logo="influxdb"]::after {
+  background-image: url("assets/logos/influxdb.png");
+}
+.net-btn[data-logo="grafana"]::after {
+  background-image: url("assets/logos/grafana.png");
+}
+.net-btn[data-logo="onlyoffice"]::after {
+  background-image: url("assets/logos/onlyoffice.png");
+}
+.net-btn[data-logo="watchyourlan"]::after {
+  background-image: url("assets/logos/watchyourlan.png");
+}
+.net-btn[data-logo="technitium"]::after {
+  background-image: url("assets/logos/technitium.png");
 }
 

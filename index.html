@@ -28,7 +28,7 @@
   <section class="container">
     <div class="hero">
       <h1 class="h-title">Designing thoughtful systems and delightful experiences</h1>
-      <p class="h-desc">I'm a systems tinkerer who loves building self-hosted tools, dashboards, and elegant automations. This site showcases my work and links to my home network services.</p>
+      <p class="h-desc">I'm a systems tinkerer who loves home labs and programming. This site showcases all my services hosted locally in my hostel room homelab routed through Cloudflare tunnels</p>
       
       <!-- Updated CTA buttons -->
       <div class="cta">
@@ -53,7 +53,7 @@
             style="background:linear-gradient(90deg,var(--sky),var(--peach));
                    padding:10px 12px;border-radius:10px;font-weight:800;
                    color:var(--surface);cursor:pointer"
-            onclick="window.open('https://www.linkedin.com/in/yourusername','_blank')">
+            onclick="window.open('https://www.linkedin.com/in/sachithanand','_blank')">
             <i class="fab fa-linkedin" style="margin-right:8px;"></i> LinkedIn
           </div>
         </div>
@@ -79,7 +79,7 @@
         <div class="network-link" role="button" tabindex="0" data-logo="crafty">
           <div>
             <div class="title">Crafty Controller</div>
-            <div class="sub">craftycontroller.daemonide.xyz</div>
+            <div class="sub">crafty.daemonide.xyz</div>
           </div>
           <div class="mask"></div>
         </div>
@@ -121,14 +121,14 @@
         <div class="network-link" role="button" tabindex="0" data-logo="watchyourlan">
           <div>
             <div class="title">WatchYourLan</div>
-            <div class="sub">watchyourlan.daemonide.xyz</div>
+            <div class="sub">lanwatch.daemonide.xyz</div>
           </div>
           <div class="mask"></div>
         </div>
         <div class="network-link" role="button" tabindex="0" data-logo="technitium">
           <div>
             <div class="title">Technitium dns</div>
-            <div class="sub">technitiumdns.daemonide.xyz</div>
+            <div class="sub">dns.daemonide.xyz</div>
           </div>
           <div class="mask"></div>
         </div>
@@ -138,42 +138,42 @@
 </main>
 
 <div class="network-page" id="networkPage">
-  <div class="grid" id="grid">
-    <button class="net-btn" data-logo="proxmox" data-url="https://proxmox.daemonide.xyz">
-      Proxmox<div class="url">proxmox.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="crafty" data-url="https://craftycontroller.daemonide.xyz">
-      Crafty Controller<div class="url">craftycontroller.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="homeassistant" data-url="https://homeassistant.daemonide.xyz">
-      Homeassistant OS<div class="url">homeassistant.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="sftpgo" data-url="https://sftpgo.daemonide.xyz">
-      SftpGO<div class="url">sftpgo.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="influxdb" data-url="https://influxdb.daemonide.xyz">
-      InfluxDB<div class="url">influxdb.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="grafana" data-url="https://grafana.daemonide.xyz">
-      Grafana<div class="url">grafana.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="onlyoffice" data-url="https://onlyoffice.daemonide.xyz">
-      ONLYOFFICE<div class="url">onlyoffice.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="watchyourlan" data-url="https://watchyourlan.daemonide.xyz">
-      WatchYourLan<div class="url">watchyourlan.daemonide.xyz</div><div class="mask"></div>
-    </button>
-    <button class="net-btn" data-logo="technitium" data-url="https://technitiumdns.daemonide.xyz">
-      Technitium dns<div class="url">technitiumdns.daemonide.xyz</div><div class="mask"></div>
-    </button>
-  </div>
+ <div class="grid" id="grid">
+  <button class="net-btn" data-logo="proxmox" data-url="https://proxmox.daemonide.xyz">
+    PROXMOX<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="crafty" data-url="https://crafty.daemonide.xyz">
+    CRAFTY CONTROLLER<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="homeassistant" data-url="https://homeassistant.daemonide.xyz">
+    HOMEASSISTANT OS<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="sftpgo" data-url="https://sftpgo.daemonide.xyz">
+    SFTPGO<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="influxdb" data-url="https://influxdb.daemonide.xyz">
+    INFLUXDB<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="grafana" data-url="https://grafana.daemonide.xyz">
+    GRAFANA<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="onlyoffice" data-url="https://onlyoffice.daemonide.xyz">
+    ONLYOFFICE<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="watchyourlan" data-url="https://lanwatch.daemonide.xyz">
+    WATCHYOURLAN<div class="mask"></div>
+  </button>
+  <button class="net-btn" data-logo="technitium" data-url="https://dns.daemonide.xyz">
+    TECHNITIUM DNS<div class="mask"></div>
+  </button>
+</div> 
 </div>
 
 <div class="footer">Copyright (c) 2025 Author. All Rights Reserved.</div>
 <script src="script.js"></script>
 <script>
   document.getElementById("viewWork").addEventListener("click", () => {
-    window.open("https://github.com/yourusername", "_blank");
+    window.open("https://github.com/daemonide", "_blank");
   });
 </script>
 </body>

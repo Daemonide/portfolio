@@ -43,14 +43,14 @@ links.forEach((link) => {
     let host = '';
 
     if (name === 'proxmox') host = 'https://proxmox.daemonide.xyz';
-    else if (name === 'crafty') host = 'https://craftycontroller.daemonide.xyz';
+    else if (name === 'crafty') host = 'https://crafty.daemonide.xyz';
     else if (name === 'homeassistant') host = 'https://homeassistant.daemonide.xyz';
     else if (name === 'sftpgo') host = 'https://sftpgo.daemonide.xyz';
     else if (name === 'influxdb') host = 'https://influxdb.daemonide.xyz';
     else if (name === 'grafana') host = 'https://grafana.daemonide.xyz';
     else if (name === 'onlyoffice') host = 'https://onlyoffice.daemonide.xyz';
-    else if (name === 'watchyourlan') host = 'https://watchyourlan.daemonide.xyz';
-    else if (name === 'technitium') host = 'https://technitiumdns.daemonide.xyz';
+    else if (name === 'watchyourlan') host = 'https://lanwatch.daemonide.xyz';
+    else if (name === 'technitium') host = 'https://dns.daemonide.xyz';
 
     if (host) window.open(host, '_blank');
   });
