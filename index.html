@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daemonide — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- GitHub Icon via Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">DI</div>
+    <div style="display:flex;flex-direction:column;line-height:1">
+      <div style="font-weight:800">Daemonide</div>
+      <div style="font-size:12px;color:var(--muted)">Portfolio</div>
+    </div>
+  </div>
+  <nav class="nav">
+    <button class="btn" id="homeNetworkBtn">Home Network</button>
+  </nav>
+</header>
+
+<main>
+  <section class="container">
+    <div class="hero">
+      <h1 class="h-title">Designing thoughtful systems and delightful experiences</h1>
+      <p class="h-desc">I'm a systems tinkerer who loves building self-hosted tools, dashboards, and elegant automations. This site showcases my work and links to my home network services.</p>
+      
+      <!-- Updated CTA buttons -->
+      <div class="cta">
+        <button class="primary" id="viewWork">
+          <i class="fab fa-github" style="margin-right:8px;"></i> Github
+        </button>
+        <button class="btn" id="contactMe">Contact</button>
+      </div>
+
+      <div style="height:22px"></div>
+
+      <!-- Updated Featured Project to LinkedIn -->
+      <div class="portfolio-card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div style="font-weight:800">Connect with me</div>
+            <div style="color:var(--muted);margin-top:6px">
+              Check out my LinkedIn profile for professional updates and collaborations.
+            </div>
+          </div>
+          <div 
+            style="background:linear-gradient(90deg,var(--sky),var(--peach));
+                   padding:10px 12px;border-radius:10px;font-weight:800;
+                   color:var(--surface);cursor:pointer"
+            onclick="window.open('https://www.linkedin.com/in/yourusername','_blank')">
+            <i class="fab fa-linkedin" style="margin-right:8px;"></i> LinkedIn
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="avatar">DI</div>
+        <div class="info">
+          <h3>Daemonide</h3>
+          <p>Systems • DevOps • Self-hosting</p>
+        </div>
+      </div>
+      <div class="network-grid">
+        <div class="network-link" role="button" tabindex="0" data-logo="proxmox">
+          <div>
+            <div class="title">Proxmox</div>
+            <div class="sub">proxmox.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="crafty">
+          <div>
+            <div class="title">Crafty Controller</div>
+            <div class="sub">craftycontroller.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="homeassistant">
+          <div>
+            <div class="title">Homeassistant OS</div>
+            <div class="sub">homeassistant.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="sftpgo">
+          <div>
+            <div class="title">SftpGO</div>
+            <div class="sub">sftpgo.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="influxdb">
+          <div>
+            <div class="title">InfluxDB</div>
+            <div class="sub">influxdb.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="grafana">
+          <div>
+            <div class="title">Grafana</div>
+            <div class="sub">grafana.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="onlyoffice">
+          <div>
+            <div class="title">ONLYOFFICE</div>
+            <div class="sub">onlyoffice.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="watchyourlan">
+          <div>
+            <div class="title">WatchYourLan</div>
+            <div class="sub">watchyourlan.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+        <div class="network-link" role="button" tabindex="0" data-logo="technitium">
+          <div>
+            <div class="title">Technitium dns</div>
+            <div class="sub">technitiumdns.daemonide.xyz</div>
+          </div>
+          <div class="mask"></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+</main>
+
+<div class="network-page" id="networkPage">
+  <div class="grid" id="grid">
+    <button class="net-btn" data-logo="proxmox" data-url="https://proxmox.daemonide.xyz">
+      Proxmox<div class="url">proxmox.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="crafty" data-url="https://craftycontroller.daemonide.xyz">
+      Crafty Controller<div class="url">craftycontroller.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="homeassistant" data-url="https://homeassistant.daemonide.xyz">
+      Homeassistant OS<div class="url">homeassistant.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="sftpgo" data-url="https://sftpgo.daemonide.xyz">
+      SftpGO<div class="url">sftpgo.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="influxdb" data-url="https://influxdb.daemonide.xyz">
+      InfluxDB<div class="url">influxdb.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="grafana" data-url="https://grafana.daemonide.xyz">
+      Grafana<div class="url">grafana.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="onlyoffice" data-url="https://onlyoffice.daemonide.xyz">
+      ONLYOFFICE<div class="url">onlyoffice.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="watchyourlan" data-url="https://watchyourlan.daemonide.xyz">
+      WatchYourLan<div class="url">watchyourlan.daemonide.xyz</div><div class="mask"></div>
+    </button>
+    <button class="net-btn" data-logo="technitium" data-url="https://technitiumdns.daemonide.xyz">
+      Technitium dns<div class="url">technitiumdns.daemonide.xyz</div><div class="mask"></div>
+    </button>
+  </div>
+</div>
+
+<div class="footer">Copyright (c) 2025 Author. All Rights Reserved.</div>
+<script src="script.js"></script>
+<script>
+  document.getElementById("viewWork").addEventListener("click", () => {
+    window.open("https://github.com/yourusername", "_blank");
+  });
+</script>
+</body>
+</html>
+
